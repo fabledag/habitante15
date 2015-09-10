@@ -1,0 +1,18 @@
+{
+  "name": "Victoria",
+  "version": "1.0.0",
+  "description": "Mi proyecto de faby",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabledag21",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "less": "^2.4.0",
+    "watch": "^0.14.0"
+  }
+}

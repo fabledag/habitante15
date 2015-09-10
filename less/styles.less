@@ -1,0 +1,125 @@
+
+img{
+  width: 100%;
+}
+
+body#body-habitante15{
+  background: url("../img/background-habitante.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+//  font-family: 'Anton', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: @white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.main-container {
+  max-width: 1220px;
+  position: relative;
+  margin-top: 20px;
+  .container-general{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .line{
+      margin: 20px 0;
+    }
+    #content{
+      width: 100%;
+    }
+  }
+}
+
+.container-general{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+header#header-habitante15{
+  nav{
+    margin: 0 auto;
+    max-width: 1220px;
+    background: none;
+    color: white;
+    border: none;
+    z-index: 5;
+    ul{
+      padding-top: 55px;
+      li{
+        font-size: 23px;
+        a{
+          color: white;
+          &:hover{
+            color: black;
+          }
+        }
+      }
+    }
+    .navbar-brand{
+      display: block;
+      padding: 20px;
+      img{
+        width: 70%;
+      }
+    }
+  }
+  .botones-nav{
+    max-width: 40%;
+    float: right;
+  }
+  .container-fluid{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+footer#footer-habitante15{
+  background-color: @blue-habitante;
+  #logos-patrocinadores{
+    max-width: 1220px;
+    h3{
+      font-size: 28px;
+      text-align: center;
+      padding: 80px 0 50px 0;
+      margin: 0;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        display: inline-block;
+        width: 24%;
+        padding-bottom: 50px;
+        img{
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+///importa less
+@import "vars";
+@import "slider-habitante";
+@import "capsulas-section";
+@import "habitantes-page";
+@import "chart";
+@import "video-main";
+@import "que-es";

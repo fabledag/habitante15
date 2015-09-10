@@ -1,20 +1,3 @@
-$(function(){
-    $("#pieChart").drawPieChart([
-        { title: "Facebook",   value : 40,  color: "#76ccce" },
-        { title: "Twitter",    value:  30,  color: "#00acad" },
-        { title: "Google",     value:  30,  color: "#333332" }
-    ]);
-  /*  $(".pieChart2").drawPieChart([
-        { title: "Facebook",   value : 20,  color: "#76ccce" },
-        { title: "Twitter",    value:  20,  color: "#00acad" },
-        { title: "Google",     value:  60,  color: "#333332" }
-    ]);
-    $(".pieChart3").drawPieChart([
-        { title: "Facebook",   value : 10,  color: "#76ccce" },
-        { title: "Twitter",    value:  70,  color: "#00acad" },
-        { title: "Google",     value:  20,  color: "#333332" }
-    ]);*/
-});
 
 (function($, undefined) {
     $.fn.drawPieChart = function(data, options) {

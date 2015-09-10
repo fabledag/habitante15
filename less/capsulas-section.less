@@ -29,16 +29,14 @@
     height: 260px;
     margin: 0 0 0 -20px;
     padding: 0;
+    display: block;
     li{
       width: 24.7%;
-      /* padding-right: 20px; */
       list-style: none;
       display: inline-block;
       text-decoration: none;
       vertical-align: top;
       cursor: pointer;
-      /* margin: 0; */
-      /* padding: 0; */
       box-sizing: border-box;
       padding-left: 20px;
       .content-preview-capsula{
@@ -48,6 +46,10 @@
         .preview-capsula{
           position: relative;
           background: url("../img/img_capsula.jpg") no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
           height: 170px;
           .icon{
             font-size: 50px;
@@ -108,6 +110,26 @@
     &:hover{
       background-color: white;
       color: @gray-dark-ha;
+    }
+  }
+}
+
+@media (max-width: 1190px){
+  .capsulas{
+    ul{
+      li{
+        width: 23%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .capsulas{
+    ul{
+      li{
+        width: 49%;
+      }
     }
   }
 }

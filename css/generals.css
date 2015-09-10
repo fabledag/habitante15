@@ -2,7 +2,7 @@ img {
   width: 100%;
 }
 body#body-habitante15 {
-  background: url("../img/background-habitante.jpg") no-repeat center center fixed;
+  background: url("../img/background-habitante.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,8 +52,9 @@ header#header-habitante15 nav ul li {
 header#header-habitante15 nav ul li a {
   color: white;
 }
-header#header-habitante15 nav ul li a:hover {
-  color: black;
+header#header-habitante15 nav ul li a:hover,
+header#header-habitante15 nav ul li a :active {
+  text-decoration: underline;
 }
 header#header-habitante15 nav .navbar-brand {
   display: block;
@@ -71,7 +72,13 @@ header#header-habitante15 .container-fluid {
   margin: 0;
 }
 footer#footer-habitante15 {
-  background-color: #00acad;
+  background: url(../img/footer_background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  position: relative;
 }
 footer#footer-habitante15 #logos-patrocinadores {
   max-width: 1220px;
@@ -85,6 +92,12 @@ footer#footer-habitante15 #logos-patrocinadores h3 {
 footer#footer-habitante15 #logos-patrocinadores .logo_corona {
   width: 20%;
   padding-bottom: 60px;
+}
+footer#footer-habitante15 #logos-patrocinadores .slogan {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: 200px;
 }
 #slider-habitante {
   margin-top: 40px;
@@ -186,7 +199,7 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .info-habitante {
   width: 90%;
-  background-color: #333333;
+  background-color: #303030;
   padding: 0 0 20px 10px;
 }
 #slider-habitante #content-slider ul li .profile-slider {
@@ -235,7 +248,7 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 #slider-habitante #content-slider ul li .profile-slider .row .img-profile .btn-conocelo {
   position: absolute;
   padding: 10px 0;
-  background-color: #333333;
+  background-color: #303030;
   font-size: 40px;
   width: 100%;
   bottom: 0;
@@ -274,7 +287,7 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 }
 .capsulas {
   width: 100%;
-  background-color: #333333;
+  background-color: #303030;
   padding: 120px 0;
   text-align: center;
 }
@@ -302,17 +315,15 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
   height: 260px;
   margin: 0 0 0 -20px;
   padding: 0;
+  display: block;
 }
 .capsulas ul li {
   width: 24.7%;
-  /* padding-right: 20px; */
   list-style: none;
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
   cursor: pointer;
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
   padding-left: 20px;
 }
@@ -324,6 +335,10 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 .capsulas ul li .content-preview-capsula .preview-capsula {
   position: relative;
   background: url("../img/img_capsula.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 170px;
 }
 .capsulas ul li .content-preview-capsula .preview-capsula .icon {
@@ -377,7 +392,17 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 }
 .capsulas a.btn-todas-capsulas:hover {
   background-color: white;
-  color: #333333;
+  color: #303030;
+}
+@media (max-width: 1190px) {
+  .capsulas ul li {
+    width: 23%;
+  }
+}
+@media (max-width: 768px) {
+  .capsulas ul li {
+    width: 49%;
+  }
 }
 #habitantes-page {
   margin-top: 60px;
@@ -534,7 +559,7 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
 }
 #txt-que-es {
   width: 100%;
-  background-color: #333333;
+  background-color: #303030;
   padding: 40px 0;
 }
 #txt-que-es .container-general {
@@ -542,24 +567,18 @@ footer#footer-habitante15 #logos-patrocinadores .logo_corona {
   text-align: center;
 }
 #txt-que-es .textos {
-  width: 40%;
+  width: 50%;
   padding: 60px 0;
 }
 #txt-que-es .textos p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 100;
   text-transform: none;
   text-align: left;
+  letter-spacing: 1.2px;
 }
 #txt-que-es .textos .slogan {
-  font-size: 40px;
-  text-align: left;
-  margin: 50px 0 0 0;
-}
-#txt-que-es .textos .slogan span {
-  font-size: 55px;
-  background-color: black;
-  padding: 5px 10px;
-  line-height: 100px;
+  font-size: 25px;
+  margin: 50px 0;
 }

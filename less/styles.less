@@ -4,7 +4,7 @@ img{
 }
 
 body#body-habitante15{
-  background: url("../img/background-habitante.jpg") no-repeat center center fixed;
+  background: url("../img/background-habitante.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -56,8 +56,8 @@ header#header-habitante15{
         font-size: 23px;
         a{
           color: white;
-          &:hover{
-            color: black;
+          &:hover, :active{
+            text-decoration: underline;
           }
         }
       }
@@ -82,7 +82,13 @@ header#header-habitante15{
 
 
 footer#footer-habitante15{
-  background-color: @blue-habitante;
+  background: url(../img/footer_background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  position: relative;
   #logos-patrocinadores{
     max-width: 1220px;
     h3{
@@ -94,6 +100,12 @@ footer#footer-habitante15{
     .logo_corona{
       width: 20%;
       padding-bottom: 60px;
+    }
+    .slogan{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      max-width: 200px;
     }
   }
 }

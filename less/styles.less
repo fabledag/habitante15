@@ -4,7 +4,7 @@ img{
 }
 
 body#body-habitante15{
-  background: url("../img/background-habitante.jpg") no-repeat center center;
+  background: url("../img/background-habitante.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,12 +82,11 @@ header#header-habitante15{
 
 
 footer#footer-habitante15{
-  background: url(../img/footer_background.jpg) no-repeat center center;
+  background: url(../img/footer_background.jpg) no-repeat 50% 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400px;
   position: relative;
   #logos-patrocinadores{
     max-width: 1220px;
@@ -112,7 +111,15 @@ footer#footer-habitante15{
 
 
 
-
+@media (min-width: 320px) and (max-width: 768px){
+  footer#footer-habitante15 {
+    #logos-patrocinadores{
+      .logo_corona{
+        width: 30% !important;
+      }
+    }
+  }
+}
 
 
 
@@ -123,7 +130,7 @@ footer#footer-habitante15{
 @import "vars";
 @import "slider-habitante";
 @import "capsulas-section";
-@import "habitantes-page";
+@import "aspirante-page";
 @import "chart";
 @import "video-main";
 @import "que-es";

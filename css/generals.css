@@ -72,12 +72,13 @@ header#header-habitante15 .container-fluid {
   margin: 0;
 }
 footer#footer-habitante15 {
-  background: url(../img/footer_background.jpg) no-repeat 50% 100%;
+  background: url(../img/footer_background.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  height: 450px;
 }
 footer#footer-habitante15 #logos-patrocinadores {
   max-width: 1220px;
@@ -89,7 +90,7 @@ footer#footer-habitante15 #logos-patrocinadores h3 {
   margin: 0;
 }
 footer#footer-habitante15 #logos-patrocinadores .logo_corona {
-  width: 20%;
+  width: 30%;
   padding-bottom: 60px;
 }
 footer#footer-habitante15 #logos-patrocinadores .slogan {
@@ -98,9 +99,9 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   bottom: 10px;
   max-width: 200px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 992px) {
   footer#footer-habitante15 #logos-patrocinadores .logo_corona {
-    width: 30% !important;
+    width: 60% !important;
   }
 }
 #slider-habitante {
@@ -137,21 +138,25 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   width: 90%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-slogan {
-  max-width: 530px;
-  margin: 0 auto;
+  max-width: 450px;
+  margin: 0 auto 0 auto;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes {
   display: block;
   width: 100%;
-  margin-top: 80px;
+  margin: 55px 0 0 0;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 {
   padding: 0;
   cursor: pointer;
 }
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 a {
+  text-decoration: none;
+  color: white;
+}
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .img-grafica-habitante {
   position: relative;
-  width: 80%;
+  width: 70%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .img-grafica-habitante .img-grafica {
   position: absolute;
@@ -180,7 +185,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   position: absolute;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante {
-  width: 80%;
+  width: 70%;
   text-align: left;
   text-transform: uppercase;
 }
@@ -196,82 +201,43 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   line-height: 0;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .img-grafica-habitante {
-  width: 90%;
+  width: 80%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .img-grafica-habitante .img-habitante .hover-habitante {
   display: block;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .info-habitante {
-  width: 90%;
+  width: 80%;
   background-color: #303030;
   padding: 0 0 20px 10px;
 }
-#slider-habitante #content-slider ul li .profile-slider {
-  width: 90%;
-}
-#slider-habitante #content-slider ul li .profile-slider .row {
-  margin: 0;
-  padding: 0;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile {
-  padding-top: 14%;
-  text-align: right;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile .name {
-  font-size: 70px;
-  line-height: 1;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile .apellidos {
-  font-size: 25px;
-  line-height: .4;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile .mas-info {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: inherit;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile img {
-  width: 35%;
-  padding: 40px 0 10px 0;
-}
-#slider-habitante #content-slider ul li .profile-slider .row .info-profile .btn_apoyalo {
-  display: block;
-  font-size: 40px;
-  color: white;
-  text-decoration: none;
+#slider-habitante #content-slider ul li #first-section-slider .slogan2 {
+  bottom: 50px;
   position: absolute;
-  top: 480px;
-  right: 15px;
+  left: 43%;
+  font-size: 30px;
 }
-#slider-habitante #content-slider ul li .profile-slider .row .img-profile {
-  position: relative;
-  padding: 0;
-  cursor: pointer;
+#slider-habitante #content-slider ul li .votacion-del-dia {
+  margin: 0 auto;
 }
-#slider-habitante #content-slider ul li .profile-slider .row .img-profile .btn-conocelo {
-  position: absolute;
-  padding: 10px 0;
-  background-color: #303030;
-  font-size: 40px;
-  width: 100%;
-  bottom: 0;
+#slider-habitante #content-slider ul li .votacion-del-dia .dinamic-title {
   text-align: center;
-  display: none;
 }
-#slider-habitante #content-slider ul li .profile-slider .row .img-profile:hover .btn-conocelo {
-  display: block;
+#slider-habitante #content-slider ul li .votacion-del-dia .dinamic-title h3 {
+  font-size: 40px;
 }
-#slider-habitante #content-slider ul li .profile-slider .pieChart4,
-#slider-habitante #content-slider ul li .profile-slider .pieChart5,
-#slider-habitante #content-slider ul li .profile-slider .pieChart6 {
-  position: absolute;
-  max-width: 120px;
-  width: 100%;
-  height: 110px;
-  top: 335px;
-  right: 15px;
-  z-index: 5;
+#slider-habitante #content-slider ul li .votacion-del-dia .dinamic-title p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: none;
+}
+#slider-habitante #content-slider ul li .votacion-del-dia .opciones {
+  width: 70%;
+  margin: 0 auto;
+  padding: 6% 0 0 0;
 }
 #slider-habitante #botones-slider ul {
   margin: 0 auto;
@@ -557,11 +523,11 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
 }
 .chart {
   position: absolute;
-  max-width: 120px;
+  max-width: 100px;
   width: 100%;
-  height: 110px;
-  top: -35px;
-  right: 0;
+  height: 100px;
+  top: -30px;
+  right: 15px;
   z-index: 5;
 }
 .pieTip {
@@ -578,7 +544,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   text-align: center;
   line-height: 1.3;
   letter-spacing: .06em;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
   -webkit-transform: all .3s;
   -moz-transform: all .3s;
   -ms-transform: all .3s;

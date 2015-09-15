@@ -28,19 +28,23 @@
         #first-section-slider{
           width: 90%;
           .img-slogan{
-            max-width: 530px;
-            margin: 0 auto;
+            max-width: 450px;
+            margin: 0 auto 0 auto;
           }
           .img-participantes{
             display: block;
             width: 100%;
-            margin-top: 80px;
+            margin: 55px 0 0 0;
             .col-md-4{
               padding: 0;
               cursor: pointer;
+              a{
+                text-decoration: none;
+                color: white;
+              }
               .img-grafica-habitante{
                 position: relative;
-                width: 80%;
+                width: 70%;
                 .img-grafica{
                   position: absolute;
                   display: block;
@@ -69,7 +73,7 @@
                 }
               }
               .info-habitante{
-                width: 80%;
+                width: 70%;
                 text-align: left;
                 text-transform: uppercase;
                 p{
@@ -86,7 +90,7 @@
               }
               &:hover{
                 .img-grafica-habitante{
-                  width: 90%;
+                  width: 80%;
                   .img-habitante{
                     .hover-habitante{
                       display: block;
@@ -94,79 +98,40 @@
                   }
                 }
                 .info-habitante{
-                  width: 90%;
+                  width: 80%;
                   background-color: @gray-dark-ha;
                   padding: 0 0 20px 10px;
                 }
               }
             }
           }
+          .slogan2{
+            bottom: 50px;
+            position: absolute;
+            left: 43%;
+            font-size: 30px;
+          }
         }
-        .profile-slider{
-          width: 90%;
-          .row{
-            margin: 0;
-            padding: 0;
-            .info-profile{
-              padding-top: 14%;
-              text-align: right;
-              .name{
-                font-size: 70px;
-                line-height: 1;
-              }
-              .apellidos{
-                font-size: 25px;
-                line-height: .4;
-              }
-              .mas-info{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 14px;
-                font-weight: 100;
-                letter-spacing: inherit;
-              }
-              img{
-                width: 35%;
-                padding: 40px 0 10px 0;
-              }
-              .btn_apoyalo{
-                display: block;
-                font-size: 40px;
-                color: white;
-                text-decoration: none;
-                position: absolute;
-                top: 480px;
-                right: 15px;
-              }
+        .votacion-del-dia{
+          margin: 0 auto;
+          .dinamic-title{
+            text-align: center;
+            h3{
+              font-size: 40px;
             }
-            .img-profile{
-              position: relative;
-              padding: 0;
-              cursor: pointer;
-              .btn-conocelo{
-                position: absolute;
-                padding: 10px 0;
-                background-color: @gray-dark-ha;
-                font-size: 40px;
-                width: 100%;
-                bottom: 0;
-                text-align: center;
-                display: none;
-              }
-              &:hover{
-                .btn-conocelo{
-                  display: block;
-                }
-              }
+            p{
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
+              font-size: 17px;
+              font-weight: 100;
+              width: 60%;
+              margin: 0 auto;
+              text-transform: none;
             }
           }
-          .pieChart4, .pieChart5 , .pieChart6{
-            position: absolute;
-            max-width: 120px;
-            width: 100%;
-            height: 110px;
-            top: 335px;
-            right: 15px;
-            z-index: 5;
+          .opciones{
+            width: 70%;
+            margin: 0 auto;
+            padding: 6% 0 0 0;
           }
         }
       }

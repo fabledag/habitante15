@@ -135,16 +135,16 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   height: 650px;
 }
 #slider-habitante #content-slider ul li #first-section-slider {
-  width: 90%;
+  width: 80%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-slogan {
-  max-width: 450px;
+  max-width: 500px;
   margin: 0 auto 0 auto;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes {
   display: block;
   width: 100%;
-  margin: 55px 0 0 0;
+  margin: 20px 0 0 0;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 {
   padding: 0;
@@ -156,15 +156,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .img-grafica-habitante {
   position: relative;
-  width: 70%;
-}
-#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .img-grafica-habitante .img-grafica {
-  position: absolute;
-  display: block;
-  top: -40px;
-  right: 10px;
-  width: 35%;
-  z-index: 2;
+  width: 80%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .img-grafica-habitante .img-habitante {
   position: relative;
@@ -185,34 +177,46 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   position: absolute;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante {
-  width: 70%;
-  text-align: left;
+  width: 80%;
+  text-align: right;
   text-transform: uppercase;
+  position: relative;
 }
-#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante p {
-  margin: 0;
-  padding: 0;
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .porcentaje {
+  display: inline-block;
+  width: 28%;
+  text-align: left;
+  font-size: 34px;
+  vertical-align: top;
+  padding-top: 2%;
 }
-#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .name {
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .data {
+  width: 70%;
+  display: inline-block;
+}
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .data .name {
   font-size: 40px;
 }
-#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .apellidos {
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4 .info-habitante .data .apellidos {
   font-size: 20px;
   line-height: 0;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .img-grafica-habitante {
-  width: 80%;
+  width: 90%;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .img-grafica-habitante .img-habitante .hover-habitante {
   display: block;
 }
 #slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .info-habitante {
-  width: 80%;
+  width: 90%;
   background-color: #303030;
-  padding: 0 0 20px 10px;
+  padding: 0 10px 10px 10px ;
+}
+#slider-habitante #content-slider ul li #first-section-slider .img-participantes .col-md-4:hover .info-habitante .porcentaje {
+  color: #00acad;
 }
 #slider-habitante #content-slider ul li #first-section-slider .slogan2 {
-  bottom: 50px;
+  bottom: 60px;
   position: absolute;
   left: 43%;
   font-size: 30px;
@@ -224,7 +228,8 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   text-align: center;
 }
 #slider-habitante #content-slider ul li .votacion-del-dia .dinamic-title h3 {
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 600;
 }
 #slider-habitante #content-slider ul li .votacion-del-dia .dinamic-title p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -238,6 +243,69 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   width: 70%;
   margin: 0 auto;
   padding: 6% 0 0 0;
+}
+#slider-habitante #content-slider ul li .video-streaming {
+  width: 70%;
+  text-align: center;
+}
+#slider-habitante #content-slider ul li .video-streaming .dinamic-title {
+  text-align: center;
+}
+#slider-habitante #content-slider ul li .video-streaming .dinamic-title h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+#slider-habitante #content-slider ul li .video-streaming .dinamic-title p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: none;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming {
+  background: url("../img/img-video-streaming.jpg") no-repeat center center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+  margin-top: 40px;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming .icon {
+  font-size: 70px;
+  color: #00acad;
+  padding-top: 22%;
+  display: block;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming .hover-preview-streaming {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 172, 173, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming .hover-preview-streaming .btn-ver-capsula {
+  text-align: center;
+  padding-top: 24%;
+  font-size: 50px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming:hover .hover-preview-streaming {
+  display: block;
+}
+#slider-habitante #content-slider ul li .video-streaming .img-video-streaming:hover .icon {
+  display: none;
+}
+#slider-habitante #content-slider ul li .otra-dinamica {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10%;
 }
 #slider-habitante #botones-slider ul {
   margin: 0 auto;
@@ -255,66 +323,101 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   background-color: white;
   cursor: pointer;
 }
-@media (max-width: 992px) {
-  #first-section-slider .img-participantes .info-habitante .name {
-    font-size: 30px;
-  }
-  #first-section-slider .img-participantes .info-habitante .apellidos {
-    font-size: 13px;
-    line-height: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 1160px) {
   #first-section-slider {
     width: 100% !important;
   }
-  #first-section-slider .img-slogan {
-    margin: 30px auto !important;
+}
+@media (min-width: 768px) and (max-width: 935px) {
+  #first-section-slider .info-habitante {
+    width: 90%;
+    text-align: center !important;
   }
-  #first-section-slider .img-participantes .info-habitante .name {
+  #first-section-slider .info-habitante .porcentaje {
+    width: 100% !important;
+    display: block !important;
     font-size: 20px;
+    text-align: center !important;
   }
-  #first-section-slider .img-participantes .info-habitante .apellidos {
-    font-size: 12px !important;
+  #first-section-slider .info-habitante .data {
+    width: 100% !important;
   }
-  .profile-slider .info-profile .name {
-    font-size: 49px !important;
-  }
-  .profile-slider .info-profile .apellidos {
-    font-size: 18px !important;
-  }
-  .profile-slider .info-profile .btn_apoyalo {
-    top: 395px !important;
-  }
-  .profile-slider .img-profile .btn-conocelo {
-    width: 135% !important;
-  }
-  .profile-slider .img-profile img {
-    width: 135%;
-  }
-  .profile-slider .pieChart4,
-  .profile-slider .pieChart5,
-  .profile-slider .pieChart6 {
-    top: 255px !important;
+  #first-section-slider .slogan2 {
+    bottom: 42px !important;
+    font-size: 25px !important;
   }
   a.btn-todas-capsulas {
     width: 60% !important;
   }
+  .video-streaming {
+    width: 90% !important;
+  }
+  .video-streaming .img-video-streaming {
+    height: 400px !important;
+  }
 }
 @media (max-width: 767px) {
   #first-section-slider {
-    width: 100% !important;
+    margin-top: 40px;
   }
-  #first-section-slider .img-slogan {
-    margin: 80px auto !important;
+  #first-section-slider .img-participantes {
+    margin: 20px 0 0 0 !important;
   }
-  #first-section-slider .img-participantes .info-habitante .name {
-    font-size: 20px !important;
+  #first-section-slider .img-participantes .info-habitante {
+    width: 90%;
     text-align: center !important;
   }
-  .profile-slider .img-profile {
-    height: 350px;
-    overflow: hidden;
+  #first-section-slider .img-participantes .info-habitante .porcentaje {
+    width: 100% !important;
+    display: block !important;
+    font-size: 20px;
+    text-align: center !important;
+  }
+  #first-section-slider .img-participantes .info-habitante .data {
+    width: 100% !important;
+  }
+  #first-section-slider .img-participantes .info-habitante .data .name {
+    font-size: 20px !important;
+  }
+  #first-section-slider .slogan2 {
+    left: 30% !important;
+  }
+  .votacion-del-dia {
+    width: 100% !important;
+  }
+  .video-streaming {
+    width: 100% !important;
+    margin-top: 40px !important;
+  }
+  .video-streaming .img-video-streaming {
+    height: 300px !important;
+  }
+}
+@media (max-width: 420px) {
+  #first-section-slider {
+    margin-top: 60px !important;
+  }
+  #first-section-slider .img-participantes {
+    margin: 80px 0 0 0 !important;
+  }
+  #first-section-slider .slogan2 {
+    left: 30% !important;
+  }
+  .votacion-del-dia {
+    width: 100% !important;
+    margin-top: 40px !important;
+  }
+  .votacion-del-dia .dinamic-title {
+    width: 100% !important;
+  }
+  .votacion-del-dia .dinamic-title p {
+    width: 90% !important;
+  }
+  .votacion-del-dia .opciones {
+    width: 100% !important;
+  }
+  .otra-dinamica {
+    margin-top: 60px !important;
   }
 }
 .capsulas {
@@ -463,11 +566,50 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   position: relative;
   margin-top: 30px;
 }
-#habitantes-page .container-general .row .habitante-profile .grafica {
+#habitantes-page .container-general .row .habitante-profile .btn-video {
+  background: url("../img/img-habitante.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 360px;
+  cursor: pointer;
+  position: relative;
+}
+#habitantes-page .container-general .row .habitante-profile .btn-video .hover-btn {
   position: absolute;
-  right: 20px;
-  top: -40px;
-  width: 30%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 172, 173, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 40%;
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+#habitantes-page .container-general .row .habitante-profile .btn-video:hover .hover-btn {
+  display: block;
+}
+#habitantes-page .container-general .row .habitante-profile .btn-habitante2 {
+  background: url("../img/img-habitante02.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 360px;
+  position: relative;
+}
+#habitantes-page .container-general .row .habitante-profile .btn-habitante3 {
+  background: url("../img/img-habitante03.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 360px;
+  position: relative;
 }
 #habitantes-page .container-general .row .habitante-profile .name {
   font-size: 40px;
@@ -507,6 +649,29 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
 #habitantes-page .container-general .row .habitante-profile a.btn-apoyo:hover {
   background: white;
   color: #00acad;
+}
+#modal-video {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+}
+#modal-video .video {
+  padding-top: 8%;
+  width: 60%;
+  margin: 0 auto;
+}
+#modal-video .video a.btn-close {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: right;
+  display: block;
+  padding-bottom: 20px;
 }
 @media (max-width: 992px) {
   #habitantes-page .container-general {
@@ -572,6 +737,33 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   width: 90%;
   max-width: 1050px;
   margin: 5% auto;
+}
+#video-main .container-general ul.share-capsula {
+  margin: 0 0 20px 0;
+}
+#video-main .container-general ul.share-capsula li {
+  display: inline-block;
+  text-align: center;
+}
+#video-main .container-general ul.share-capsula li .boton-share {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 15px;
+}
+#video-main .container-general ul.share-capsula li .boton-share:hover {
+  background: #00acad;
+}
+#video-main .container-general ul.share-capsula li .boton-facebook {
+  padding: 10px 20px !important;
+}
+#video-main .container-general ul.share-capsula .comparte {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-size: 16px;
+  text-transform: none;
 }
 #video-main .container-general iframe {
   padding: 0;

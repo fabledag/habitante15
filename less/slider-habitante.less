@@ -26,15 +26,15 @@
         list-style: none;
         height: 650px;
         #first-section-slider{
-          width: 90%;
+          width: 80%;
           .img-slogan{
-            max-width: 450px;
+            max-width: 500px;
             margin: 0 auto 0 auto;
           }
           .img-participantes{
             display: block;
             width: 100%;
-            margin: 55px 0 0 0;
+            margin: 20px 0 0 0;
             .col-md-4{
               padding: 0;
               cursor: pointer;
@@ -44,15 +44,7 @@
               }
               .img-grafica-habitante{
                 position: relative;
-                width: 70%;
-                .img-grafica{
-                  position: absolute;
-                  display: block;
-                  top: -40px;
-                  right: 10px;
-                  width: 35%;
-                  z-index: 2;
-                }
+                width: 80%;
                 .img-habitante{
                   position: relative;
                   .hover-habitante{
@@ -73,24 +65,33 @@
                 }
               }
               .info-habitante{
-                width: 70%;
-                text-align: left;
+                width: 80%;
+                text-align: right;
                 text-transform: uppercase;
-                p{
-                  margin: 0;
-                  padding: 0;
+                position: relative;
+                .porcentaje{
+                  display: inline-block;
+                  width: 28%;
+                  text-align: left;
+                  font-size: 34px;
+                  vertical-align: top;
+                  padding-top: 2%;
                 }
-                .name{
-                  font-size: 40px;
-                }
-                .apellidos{
-                  font-size: 20px;
-                  line-height: 0;
+                .data{
+                  width: 70%;
+                  display: inline-block;
+                  .name{
+                    font-size: 40px;
+                  }
+                  .apellidos{
+                    font-size: 20px;
+                    line-height: 0;
+                  }
                 }
               }
               &:hover{
                 .img-grafica-habitante{
-                  width: 80%;
+                  width: 90%;
                   .img-habitante{
                     .hover-habitante{
                       display: block;
@@ -98,15 +99,18 @@
                   }
                 }
                 .info-habitante{
-                  width: 80%;
+                  width: 90%;
                   background-color: @gray-dark-ha;
-                  padding: 0 0 20px 10px;
+                  padding: 0 10px 10px 10px ;
+                  .porcentaje{
+                    color: @blue-habitante;
+                  }
                 }
               }
             }
           }
           .slogan2{
-            bottom: 50px;
+            bottom: 60px;
             position: absolute;
             left: 43%;
             font-size: 30px;
@@ -117,7 +121,8 @@
           .dinamic-title{
             text-align: center;
             h3{
-              font-size: 40px;
+              font-size: 50px;
+              font-weight: 600;
             }
             p{
               font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -133,6 +138,71 @@
             margin: 0 auto;
             padding: 6% 0 0 0;
           }
+        }
+        .video-streaming{
+          width: 70%;
+          text-align: center;
+          .dinamic-title{
+            text-align: center;
+            h3{
+              font-size: 50px;
+              font-weight: 600;
+            }
+            p{
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
+              font-size: 17px;
+              font-weight: 100;
+              width: 60%;
+              margin: 0 auto;
+              text-transform: none;
+            }
+          }
+          .img-video-streaming{
+            background: url("../img/img-video-streaming.jpg")no-repeat center center;
+            position: relative;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 450px;
+            margin-top: 40px;
+            .icon{
+              font-size: 70px;
+              color: @blue-habitante;
+              padding-top: 22%;
+              display: block;
+            }
+            .hover-preview-streaming{
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgba(0, 172, 173, 0.7);
+              width: 100%;
+              height: 100%;
+              display: none;
+              .btn-ver-capsula{
+                text-align: center;
+                padding-top: 24%;
+                font-size: 50px;
+                display: block;
+                text-decoration: none;
+                color: white;
+              }
+            }
+            &:hover{
+              .hover-preview-streaming{
+                display: block;
+              }
+              .icon{
+                display: none;
+              }
+            }
+          }
+        }
+        .otra-dinamica{
+          width: 70%;
+          margin: 0 auto;
+          padding-top: 10%;
         }
       }
     }
@@ -158,90 +228,107 @@
 }
 
 
-@media (max-width: 992px){
+@media (max-width: 1160px){
   #first-section-slider {
-    .img-participantes {
-      .info-habitante {
-        .name {
-          font-size: 30px;
-        }
-        .apellidos {
-          font-size: 13px;
-          line-height: 0;
-        }
-      }
-    }
+    width: 100% !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  #first-section-slider{
-    width: 100% !important;
-    .img-slogan{
-      margin: 30px auto !important;
-    }
-    .img-participantes{
-      .info-habitante{
-        .name{
-          font-size: 20px;
-        }
-        .apellidos{
-          font-size: 12px !important;
-        }
-      }
-    }
-  }
 
-  .profile-slider {
-    .info-profile{
-      .name{
-        font-size: 49px !important;
+
+@media (min-width: 768px) and (max-width: 935px) {
+  #first-section-slider{
+    .info-habitante{
+      width: 90%;
+      text-align: center !important;
+      .porcentaje{
+        width: 100% !important;
+        display: block !important;
+        font-size: 20px;
+        text-align: center !important;
       }
-      .apellidos{
-        font-size: 18px !important;
-      }
-      .btn_apoyalo{
-        top: 395px !important;
-      }
-    }
-    .img-profile{
-      .btn-conocelo{
-        width: 135% !important;
-      }
-      img{
-        width: 135%
+      .data{
+        width: 100% !important;
       }
     }
-    .pieChart4, .pieChart5, .pieChart6{
-      top: 255px !important;
+    .slogan2{
+      bottom: 42px !important;
+      font-size: 25px !important;
     }
   }
   a.btn-todas-capsulas{
     width: 60% !important;
   }
+  .video-streaming{
+    width: 90% !important;
+    .img-video-streaming{
+      height: 400px !important;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   #first-section-slider{
-    width: 100% !important;
-    .img-slogan{
-      margin: 80px auto !important;
-    }
+    margin-top: 40px;
     .img-participantes{
+      margin:  20px 0 0 0 !important;
       .info-habitante{
-        .name{
-          font-size: 20px !important;
+        width: 90%;
+        text-align: center !important;
+        .porcentaje{
+          width: 100% !important;
+          display: block !important;
+          font-size: 20px;
           text-align: center !important;
+        }
+        .data{
+          width: 100% !important;
+          .name{
+            font-size: 20px !important;
+          }
         }
       }
     }
+    .slogan2{
+      left: 30% !important;
+    }
   }
-  .profile-slider{
-    .img-profile{
-      height: 350px;
-      overflow: hidden;
+  .votacion-del-dia{
+    width: 100% !important;
+  }
+  .video-streaming{
+    width: 100% !important;
+    margin-top: 40px !important;
+    .img-video-streaming{
+      height: 300px !important;
     }
   }
 }
 
-
+@media (max-width: 420px){
+  #first-section-slider{
+    margin-top: 60px !important;
+    .img-participantes{
+      margin:  80px 0 0 0 !important;
+    }
+    .slogan2{
+      left: 30% !important;
+    }
+  }
+  .votacion-del-dia{
+    width: 100% !important;
+    margin-top: 40px !important;
+    .dinamic-title{
+      width: 100% !important;
+      p{
+        width: 90% !important;
+      }
+    }
+    .opciones{
+      width: 100% !important;
+    }
+  }
+  .otra-dinamica{
+    margin-top: 60px !important;
+  }
+}

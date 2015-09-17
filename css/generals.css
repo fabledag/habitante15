@@ -657,7 +657,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   z-index: 100;
   top: 0;
   left: 0;
-  display: none;
+  display: block;
   position: fixed;
 }
 #modal-video .video {
@@ -665,13 +665,22 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   width: 60%;
   margin: 0 auto;
 }
-#modal-video .video a.btn-close {
+#modal-video a.btn-close {
   color: white;
   text-decoration: none;
   font-size: 30px;
   text-align: right;
   display: block;
-  padding-bottom: 20px;
+  padding: 1% 1% 0 0;
+}
+#modal-video #video1 {
+  display: none;
+}
+#modal-video #video2 {
+  display: block;
+}
+#modal-video #video3 {
+  display: none;
 }
 @media (max-width: 992px) {
   #habitantes-page .container-general {

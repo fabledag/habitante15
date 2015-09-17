@@ -25,114 +25,125 @@
     font-size: 30px;
     padding-bottom: 25px;
   }
-  ul{
-    margin: 20px 0 40px -20px;
-    padding: 0;
-    display: block;
-    li{
-      width: 24.7%;
-      list-style: none;
-      display: inline-block;
-      text-decoration: none;
-      vertical-align: top;
-      cursor: pointer;
-      box-sizing: border-box;
-      padding-left: 20px;
-      margin-bottom: 20px;
-      .content-preview-capsula{
-        position: relative;
+  .container-capsulas{
+    display: inline-block;
+    width: 70%;
+    .fila-capsulas{
+      border-top: 1px solid black;
+      ul{
+        margin: 20px 0 40px -15px;
         padding: 0;
-        margin: 0;
-        .preview-capsula{
-          position: relative;
-          background: url("../img/img_capsula.jpg") no-repeat center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          height: 170px;
-          .icon{
-            font-size: 50px;
-            color: @blue-habitante;
-            padding-top: 18%;
-            display: block;
-          }
-        }
-        .hover-preview-capsula{
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: rgba(0, 172, 173, 0.7);
-          width: 100%;
-          height: 100%;
-          display: none;
-          .btn-ver-capsula{
-            text-align: center;
-            padding-top: 27%;
-            display: block;
-            text-decoration: none;
-            color: white;
-          }
-        }
-        .description-capsula-home{
-          padding: 10px 0;
-          text-align: left;
-          line-height: 1.2;
-          text-transform: none;
-          font-size: 10px;
-        }
-        &:hover{
-          .preview-capsula{
-            .icon{
-              display: none;
+        display: block;
+        li{
+          width: 32.6%;
+          list-style: none;
+          display: inline-block;
+          text-decoration: none;
+          vertical-align: top;
+          cursor: pointer;
+          box-sizing: border-box;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          .content-preview-capsula{
+            position: relative;
+            padding: 0;
+            margin: 0;
+            .preview-capsula{
+              position: relative;
+              background: url("../img/img_capsula.jpg") no-repeat center center;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              height: 170px;
+              .icon{
+                font-size: 50px;
+                color: @blue-habitante;
+                padding-top: 18%;
+                display: block;
+              }
             }
-          }
-          .hover-preview-capsula{
-            display:block;
-          }
-          .description-capsula-home{
-            background-color: @blue-habitante;
-            padding-left: 10px;
+            .hover-preview-capsula{
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgba(0, 172, 173, 0.7);
+              width: 100%;
+              height: 100%;
+              display: none;
+              .btn-ver-capsula{
+                text-align: center;
+                padding-top: 27%;
+                display: block;
+                text-decoration: none;
+                color: white;
+              }
+            }
+            .description-capsula-home{
+              padding: 10px 0;
+              text-align: left;
+              line-height: 1.2;
+              text-transform: none;
+              font-size: 10px;
+            }
+            &:hover{
+              .preview-capsula{
+                .icon{
+                  display: none;
+                }
+              }
+              .hover-preview-capsula{
+                display:block;
+              }
+              .description-capsula-home{
+                background-color: @blue-habitante;
+                padding-left: 10px;
+              }
+            }
           }
         }
       }
+      &:first-child{
+        border: none;
+      }
+    }
+    a.btn-todas-capsulas{
+      text-decoration: none;
+      width: 50%;
+      font-size: 30px;
+      padding: 20px 0;
+      color: white;
+      display: block;
+      border: 5px solid white;
+      margin-top: 60px;
+      &:hover{
+        background-color: white;
+        color: @gray-dark-ha;
+      }
     }
   }
-  a.btn-todas-capsulas{
-    text-decoration: none;
-    width: 33%;
-    font-size: 30px;
-    padding: 20px 0;
-    color: white;
-    display: block;
-    border: 5px solid white;
-    margin-top: 60px;
-    &:hover{
-      background-color: white;
-      color: @gray-dark-ha;
-    }
+  .add-aside{
+    max-width: 300px;
+    display: inline-block;
+    padding-top: 46px;
+    vertical-align: top;
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  .advertising-title{
+    color: dimgray;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 1190px){
   .capsulas{
-    ul{
-      li{
-        width: 23%;
-      }
-    }
+
   }
 }
 
 @media (max-width: 768px){
   .capsulas{
-    ul{
-      li{
-        width: 49%;
-      }
-    }
-    .btn-todas-capsulas{
-      width: 60% !important;
-    }
+
   }
 }

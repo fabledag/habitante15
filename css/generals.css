@@ -462,28 +462,35 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   font-size: 30px;
   padding-bottom: 25px;
 }
-.capsulas ul {
-  margin: 20px 0 40px -20px;
+.capsulas .container-capsulas {
+  display: inline-block;
+  width: 70%;
+}
+.capsulas .container-capsulas .fila-capsulas {
+  border-top: 1px solid black;
+}
+.capsulas .container-capsulas .fila-capsulas ul {
+  margin: 20px 0 40px -15px;
   padding: 0;
   display: block;
 }
-.capsulas ul li {
-  width: 24.7%;
+.capsulas .container-capsulas .fila-capsulas ul li {
+  width: 32.6%;
   list-style: none;
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
   cursor: pointer;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 10px;
   margin-bottom: 20px;
 }
-.capsulas ul li .content-preview-capsula {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula {
   position: relative;
   padding: 0;
   margin: 0;
 }
-.capsulas ul li .content-preview-capsula .preview-capsula {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula .preview-capsula {
   position: relative;
   background: url("../img/img_capsula.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -492,13 +499,13 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   background-size: cover;
   height: 170px;
 }
-.capsulas ul li .content-preview-capsula .preview-capsula .icon {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula .preview-capsula .icon {
   font-size: 50px;
   color: #00acad;
   padding-top: 18%;
   display: block;
 }
-.capsulas ul li .content-preview-capsula .hover-preview-capsula {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula .hover-preview-capsula {
   position: absolute;
   top: 0;
   left: 0;
@@ -507,33 +514,36 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   height: 100%;
   display: none;
 }
-.capsulas ul li .content-preview-capsula .hover-preview-capsula .btn-ver-capsula {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula .hover-preview-capsula .btn-ver-capsula {
   text-align: center;
   padding-top: 27%;
   display: block;
   text-decoration: none;
   color: white;
 }
-.capsulas ul li .content-preview-capsula .description-capsula-home {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula .description-capsula-home {
   padding: 10px 0;
   text-align: left;
   line-height: 1.2;
   text-transform: none;
   font-size: 10px;
 }
-.capsulas ul li .content-preview-capsula:hover .preview-capsula .icon {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula:hover .preview-capsula .icon {
   display: none;
 }
-.capsulas ul li .content-preview-capsula:hover .hover-preview-capsula {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula:hover .hover-preview-capsula {
   display: block;
 }
-.capsulas ul li .content-preview-capsula:hover .description-capsula-home {
+.capsulas .container-capsulas .fila-capsulas ul li .content-preview-capsula:hover .description-capsula-home {
   background-color: #00acad;
   padding-left: 10px;
 }
-.capsulas a.btn-todas-capsulas {
+.capsulas .container-capsulas .fila-capsulas:first-child {
+  border: none;
+}
+.capsulas .container-capsulas a.btn-todas-capsulas {
   text-decoration: none;
-  width: 33%;
+  width: 50%;
   font-size: 30px;
   padding: 20px 0;
   color: white;
@@ -541,22 +551,21 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   border: 5px solid white;
   margin-top: 60px;
 }
-.capsulas a.btn-todas-capsulas:hover {
+.capsulas .container-capsulas a.btn-todas-capsulas:hover {
   background-color: white;
   color: #303030;
 }
-@media (max-width: 1190px) {
-  .capsulas ul li {
-    width: 23%;
-  }
+.capsulas .add-aside {
+  max-width: 300px;
+  display: inline-block;
+  padding-top: 46px;
+  vertical-align: top;
+  margin-right: 0;
+  margin-left: 25px;
 }
-@media (max-width: 768px) {
-  .capsulas ul li {
-    width: 49%;
-  }
-  .capsulas .btn-todas-capsulas {
-    width: 60% !important;
-  }
+.capsulas .advertising-title {
+  color: dimgray;
+  font-size: 10px;
 }
 #habitantes-page {
   margin-top: 60px;
@@ -605,6 +614,8 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   font-size: 40px;
   display: none;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 #habitantes-page .container-general .row .habitante-profile .btn-video:hover .hover-btn {
   display: block;

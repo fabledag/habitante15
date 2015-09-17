@@ -15,6 +15,8 @@ main.closeModal = function(){
     $("#modal-video .btn-close").click(function(){
         $("#modal-video").hide();
         $("#modal-video .video").hide();
+        $('body').css('overflow', 'auto');
+
         return false;
     });
 }
@@ -22,9 +24,9 @@ main.closeModal = function(){
 main.openModal = function(){
     $(".container-general .btn-video").click(function(){
         video = $(this).attr("data-target");
-        console.log(video);
         $("#modal-video").show();
         $("#modal-video #" + video).show();
+        $('body').css('overflow', 'hidden');
     });
 }
 

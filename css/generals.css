@@ -657,7 +657,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   z-index: 100;
   top: 0;
   left: 0;
-  display: block;
+  display: none;
   position: fixed;
 }
 #modal-video .video {
@@ -677,7 +677,7 @@ footer#footer-habitante15 #logos-patrocinadores .slogan {
   display: none;
 }
 #modal-video #video2 {
-  display: block;
+  display: none;
 }
 #modal-video #video3 {
   display: none;

@@ -10,43 +10,26 @@ main.sliderHome = function(){
     });
 };
 
-//main.drawCharts = function(){
-//    $(".pieChart").drawPieChart([
-//        { title: "Facebook",   value : 20,  color: "#76ccce" },
-//        { title: "Twitter",    value:  20,  color: "#00acad" },
-//        { title: "Google",     value:  60,  color: "#333332" }
-//    ]);
-//    $(".pieChart2").drawPieChart([
-//        { title: "Facebook",   value : 20,  color: "#76ccce" },
-//        { title: "Twitter",    value:  20,  color: "#00acad" },
-//        { title: "Google",     value:  60,  color: "#333332" }
-//    ]);
-//    $(".pieChart3").drawPieChart([
-//        { title: "Facebook",   value : 10,  color: "#76ccce" },
-//        { title: "Twitter",    value:  70,  color: "#00acad" },
-//        { title: "Google",     value:  20,  color: "#333332" }
-//    ]);
-//
-//
-//
-//    $(".pieChart4").drawPieChart([
-//        { title: "Facebook",   value : 20,  color: "#76ccce" },
-//        { title: "Twitter",    value:  20,  color: "#00acad" },
-//        { title: "Google",     value:  60,  color: "#333332" }
-//    ]);
-//    $(".pieChart5").drawPieChart([
-//        { title: "Facebook",   value : 20,  color: "#76ccce" },
-//        { title: "Twitter",    value:  20,  color: "#00acad" },
-//        { title: "Google",     value:  60,  color: "#333332" }
-//    ]);
-//    $(".pieChart6").drawPieChart([
-//        { title: "Facebook",   value : 10,  color: "#76ccce" },
-//        { title: "Twitter",    value:  70,  color: "#00acad" },
-//        { title: "Google",     value:  20,  color: "#333332" }
-//    ]);
-//};
+
+main.closeModal = function(){
+    $("#modal-video .btn-close").click(function(){
+        $("#modal-video").hide();
+        $("#modal-video .video").hide();
+        return false;
+    });
+}
+
+main.openModal = function(){
+    $(".container-general .btn-video").click(function(){
+        video = $(this).attr("data-target");
+        console.log(video);
+        $("#modal-video").show();
+        $("#modal-video #" + video).show();
+    });
+}
 
 $(function(){
-    //main.drawCharts();
+    main.openModal();
+    main.closeModal();
     main.sliderHome();
 });
